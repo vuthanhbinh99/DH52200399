@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Kí Tài Khoản</title>
+</head>
+<body>
+    <form action="submit.html" method="post" enctype="multipart/form-data">
+        <table border="1">
+            <tr>
+                <td> <label for="username">Tên Đăng Nhập</label></td>
+                <td><input type="text" name="username" id="username" ></td>
+            </tr>
+        </table>
+         <table border="1">
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td> <input type="email" name="email" id="email" > </td>
+            </tr>
+         </table>
+         <table border="1">
+            <tr>
+                <td><label for="password">Mật Khẩu</label></td>
+                <td><input type="password" name="password" id="password" ></td>
+            </tr>
+         </table>
+         <table border="1">
+            <tr>
+                <td><label>Giới Tính</label></td>
+                <td><input type="radio" name="gender" id="male" value="Nam"> Nam 
+                    <input type="radio" name="gender" id="female" value="Nu"> Nu</td>
+            </tr>
+         </table>
+         <table border="1">
+            <tr>
+                <td><label>Sở Thích</label></td>
+                <td>  <input type="checkbox" name="hobbies" id="sport" value="Thể Thao"> Thể Thao
+                    <input type="checkbox" name="hobbies" id="sport" value="Du Lịch">  Du Lịch</td>
+            </tr>
+         </table>
+         <table border="1">
+            <tr>
+                <td> <label for="avatar">Ảnh đại diện</label></td>
+                <td><input type="file" name="avatar" id="avatar" accept="image/*"></td>
+            </tr>
+         </table>
+         <table border="1">
+            <tr>
+                <td><label for="dob">Ngày Sinh</label></td>
+                <td><input type="date" name="dob" id="dob" ></td>
+            </tr>
+         </table>
+         <table border="1">
+            <tr>
+                <td><label for="class">Chọn Lớp</label></td>
+                <td><   <select name="class" id="class">
+                    <option value="TH-01">TH_01</option>
+                    <option value="TH-02">TH_02</option>
+                    <option value="TH-03">TH_03</option>
+                    <option value="TH-04">TH_04</option>
+                    <option value="TH-05">TH_05</option>
+                    <option value="TH-06">TH_06</option>
+                    <option value="TH-07">TH_07</option>
+                    <option value="TH-08">TH_08</option>
+                    <option value="TH-09">TH_09</option>
+                    <option value="TH-10">TH_10</option>
+                </select>
+            </tr>
+         </table>
+         <label for="more-info">Thông tin thêm</label> <br>
+         <textarea name="more-info" id="more-info" rows="=4" cols="50" placeholder="Nhập thông tin thêm tại đây..."></textarea> <br>
+         <button type="submit">Đăng kí</button>
+         <button type="reset">Xóa form</button>
+    </form>
+</body>
+</html>
